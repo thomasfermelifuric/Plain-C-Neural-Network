@@ -51,11 +51,6 @@ int main(){
     int correct_hypothesis = 0;
 
     for (int i = 0; i < 10000; ++i) {
-        if(test_label[i] == 0){ //Associates 0 with empty image
-            for (int j = 0; j < 784; ++j) {
-                test_image[i][j] = 0.0;
-            }
-        }
 
         //----------FORWARD PROPAGATION----------
 
